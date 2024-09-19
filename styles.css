@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    box-sizing: border-box
+}
+
+html {
+    color: white;
+}
+
+body { 
+    background-color: #600028; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 2%
+}
+
+
+header {
+    
+    text-align: left;
+    font-size: calc(12px + 1vw);
+}
+
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #2d0065; 
+    width: 30%; 
+    margin: 2vh auto;
+    padding: 2% 1%;
+    border-radius: 25px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    font-size: calc(1em + 1vw);
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none; 
+    color: white;
+}
+
+a {
+    color: rgb(225, 196, 251);
+}
+
+img {
+    border-style: solid;
+    width: 30vw; 
+    height: auto; 
+    object-fit: contain;
+}
+
+nav ul {
+    list-style-type: circle;
+}
+
+main {
+    background-color: #46074d;
+    width: 70%;
+    height: 100vh;
+    font-size: calc(6px + 1vw);
+    margin: 2vh auto;
+    padding: 2%;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #5a2f72;
+    border-radius: 25px;
+}
+
+div.content {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 12%
+}
+
+button {
+    background-color: #600028;
+    color: white;
+    font-size: calc(6px + 1vw);
+    padding: 1%;
+    border-radius: 25%;
+    border: solid;
+    border-width: 4px;
+    border-color: #390018;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 12%;
+}
+
+@media screen and (max-width: 750px) {
+    
+    header {
+      text-align: center;
+    }
+    body {
+        margin: 0%;
+    }
+    nav {
+        margin: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+    nav ul {
+        flex-direction: row;
+        list-style-type: none;
+        padding: 1% 1%;
+    }
+    nav ul li {
+        font-size: calc(6px + 1vw);
+        padding: 0% 2%;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 4%;
+        border-radius: 0px;
+        font-size: calc(10px + 1vw);
+    }
+    div.content {
+        flex-direction: column;
+        margin: 0;
+    }
+    img {
+        width: 45vw; 
+        height: auto; 
+        object-fit: contain;
+    }
+}
+
+footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+}
